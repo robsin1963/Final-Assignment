@@ -15,3 +15,4 @@ df3 = pd.read_csv("https://cf-courses-data.s3.us.cloud-object-storage.appdomain.
 df3.to_sql("CHICAGO_CRIME_DATA", con, if_exists='replace', index=False, method='multi')
 %sql sqlite3:///FinalDB.db
 conn = sqlite3.connect('FinalDB.db')
+%sql SELECT count(*) FROM CHICAGO_CRIME_DATA
