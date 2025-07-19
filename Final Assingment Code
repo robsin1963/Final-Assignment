@@ -1,1 +1,6 @@
+!pip install pandas
+!pip install ipython-sql prettytable 
 
+import prettytable
+
+prettytable.DEFAULT = 'DEFAULT'
