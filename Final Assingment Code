@@ -1,6 +1,8 @@
 !pip install pandas
 !pip install ipython-sql prettytable 
-
 import prettytable
-
 prettytable.DEFAULT = 'DEFAULT'
+import sqlite3
+import pandas as pd
+con= sqlite3.connect('FinalDB.db')
+cur= con.cursor()
